@@ -12,7 +12,9 @@
         v-bind:key="row.title"
         v-bind:price="row.price"
         v-bind:quantity="row.quantity"
-        :row="row"/>
+        :row="row"
+        @row_changed="Change"
+        @row_deleted="Delete"/>
         <tr>
             <td>
                 <input type="text" v-model="title">
@@ -46,6 +48,12 @@ export default{
     methods: {
         Submit() {
             this.$emit('row_added', {title: this.title, price: this.price, quantity: this.quantity})
+        },
+        Change(e) {
+            this.$emit('row_changed', e)
+        },
+        Delete(e) {
+            this.$emit('row_deleted', e)
         }
     }
 }

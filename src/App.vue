@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <Tablazat :rows="rows"
-    @row_added="Added"/>
+    @row_added="Added"
+    @row_changed="Changed"
+    @row_deleted="Deleted"/>
   </div>
 </template>
 
@@ -42,6 +44,12 @@ export default {
   methods: {
     Added(e) {
       this.rows.push(e)
+    },
+    Changed() {
+      
+    },
+    Deleted(e) {
+      this.rows = this.rows.filter((row)=>e.original != row)
     }
   }
 }

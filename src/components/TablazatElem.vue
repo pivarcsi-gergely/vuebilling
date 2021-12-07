@@ -10,8 +10,8 @@
                 {{ quantity }}
             </td>
             <td>
-                <button @clickX="Delete">X</button>
-                <button @clickEdit="Edit">Edit</button>
+                <button @click="Delete">X</button>
+                <button @click="Edit">Edit</button>
             </td>
         </tr>
 </template>
@@ -26,5 +26,13 @@ export default{
             quantity: this.row.quantity
         }
     },
+    methods: {
+        Delete() {
+            this.$emit('row_deleted', {original: this.row})
+        },
+        Edit() {
+
+        }
+    }
 }
 </script>
