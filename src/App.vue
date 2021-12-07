@@ -45,8 +45,18 @@ export default {
     Added(e) {
       this.rows.push(e)
     },
-    Changed() {
-      
+    Changed(e) {
+      this.rows.map((row)=> {
+        if (row.title != e.original.title || row.price != e.original.price || row.quantity != e.original.quantity) {
+          return row;
+        }
+        else {
+          row.title = e.new.title
+          row.price = e.new.price
+          row.quantity = e.new.quantity
+          return row;
+        }
+      })
     },
     Deleted(e) {
       this.rows = this.rows.filter((row)=>e.original != row)
