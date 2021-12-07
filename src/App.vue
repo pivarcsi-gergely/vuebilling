@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <Tablazat :rows="rows" />
+    <Tablazat :rows="rows"
+    @row_added="Added"/>
   </div>
 </template>
 
@@ -36,6 +37,11 @@ export default {
           quantity: 321
         },
       ]
+    }
+  },
+  methods: {
+    Added(e) {
+      this.rows.push(e)
     }
   }
 }
