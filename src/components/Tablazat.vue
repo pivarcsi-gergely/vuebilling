@@ -5,6 +5,7 @@
             <th>Cím</th>
             <th>Ár</th>
             <th>Mennyiség</th>
+            <th>Operations</th>
         </tr>
         <TablazatElem
         v-for="row in rows"

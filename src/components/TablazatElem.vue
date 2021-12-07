@@ -9,6 +9,10 @@
             <td>
                 {{ quantity }}
             </td>
+            <td>
+                <button @clickX="Delete">X</button>
+                <button @clickEdit="Edit">Edit</button>
+            </td>
         </tr>
 </template>
 
