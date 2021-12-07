@@ -29,7 +29,7 @@ Add be a repod linkjét. Figyelj oda, hogy az utolsó commit idejét fogjuk néz
 Készíts raktárnyilvántartó programot. A tételekről nyilvántartjuk a nevét (title), az árát forintban (price) és a darabszámát (quantity).
 1. Készíts táblázatot, ami megjeleníti a raktárban nyilvántartott tételeket. Figyelj arra, hogy a táblázatnak legyen fejléce az oszlopok megnevezésével! (__5p__)
 2. Adj a táblázathoz egy plusz sort, amiben űrlapelemek vannak és egy újabb tételt lehet hozzáadni vele. Nem kell foglalkoznod azzal, ha egy már létező nevű(title) tételt adnak hozzá. (__3p__)
-3. Adj hozzá a táblázathoz egy új oszlopot "Operations" néven, amiben van két gomb egy törlés (X) és egy szerkesztés (Edit) (__1p__)
+3. Adj hozzá a táblázathoz egy új oszlopot "Operations" néven, amiben van két gomb: egy törlés (X) és egy szerkesztés (Edit) (__1p__)
 4. A törlés gomb megnyomásával törlődjön a tétel. A tétel egyedi azonosítója a title. (__2p__)
 5. Az edit gomb megnyomásával megjelennik három beviteli mező, valamint egy "Save" gomb. A Save gomb megnyomására mentődjön a tétel. (__2p__)
 
